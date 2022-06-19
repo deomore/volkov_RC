@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <!--Roles insert-->
+    <include file="/db/changelog/patches/role-init/role-init.xml"/>
+    <include file="/db/changelog/patches/role-init/new-tables.xml"/>
+    <include file="/db/changelog/patches/role-init/add-column.xml"/>
+    <include file="db/changelog/patches/role-init/add-column-release.xml"/>
+</databaseChangeLog>
